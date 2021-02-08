@@ -4,7 +4,9 @@
 
 This project is about creating a form in pure HTML and reform it by using form_tag helper and form_with helper in Rails.
 
-The form created in this projects includes username, email, password, and submit. This form allows you to create new instances and save them in a table. Also, it enables you to edit the information of users on the table. 
+The form created in this projects includes username, email, password, and submit. This form allows you to create new instances and save them in a table. Also, it enables you to edit the information of users on the table.
+
+The form raises an error when a field is empty.
 
 ![screenshot](images/srcn.png)
 
