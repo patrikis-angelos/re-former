@@ -6,10 +6,10 @@
 
 <%= form_with model: @user do |form| %>
   <%= form.label :username, "User Name" %>
-  <%= form.text_field :username %>
+  <%= form.text_field :username, placeholder: "Enter your username here"%>
   <%= form.label :email, "Email" %>
-  <%= form.text_field :email%>
+  <%= form.text_field :email, placeholder: "example@email.com"%>
   <%= form.label :password, "Password" %>
-  <%= form.password_field :password%>
+  <%= form.password_field :password, placeholder: "Enter your password here"%>
   <%= form.submit "Submit" %>
 <% end %>
