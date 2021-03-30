@@ -1,0 +1,15 @@
+<% if @user.errors.any? %>
+  <% @user.errors.full_messages.each do |message| %>
+     <h3><%= message %> </h3>
+  <%end%>
+<% end %>
+
+<%= form_with model: @user do |form| %>
+  <%= form.label :username, "User Name" %>
+  <%= form.text_field :username, placeholder: "Enter your username here"%>
+  <%= form.label :email, "Email" %>
+  <%= form.text_field :email, placeholder: "example@email.com"%>
+  <%= form.label :password, "Password" %>
+  <%= form.password_field :password, placeholder: "Enter your password here"%>
+  <%= form.submit "Submit" %>
+<% end %>
