@@ -2,9 +2,9 @@
 
 # Creating A Rails Form
 
-This project is about creating a form in pure HTML and reform it by using form_tag helper and form_with helper in Rails.
+This project is about creating a form in pure HTML and reform it by using the form_tag helper and form_with helper in Rails.
 
-The form created in this projects includes username, email, password, and submit. This form allows you to create new instances and save them in a table. Also, it enables you to edit the information of users on the table.
+The form created in this project includes username, email, password, and submit. This form allows you to create new instances and save them in a table. Also, it enables you to edit the information of users on the table.
 
 The form raises an error when a field is empty.
 
@@ -20,15 +20,14 @@ The form raises an error when a field is empty.
 To get started with the project follow the steps below:
 - `git clone git@github.com:patrick-angelos/re-former.git`
 - `cd re-former`
-- `git checkout form`
 - `bundle install`
-- `bin/rails db:migrate`
+- `rails db:migrate`
 - To access the new user creation form, use the following route: localhost:3000/users/new.
 - To access the edit page for users, use the following route: localhost:3000/users/:id/edit.
-- Take a look at the table with `bin/rails console`.
+- Take a look at the table with `rails console`.
 - If you need further assistance for creating instances visit the [Active Record guides](https://guides.rubyonrails.org/active_record_basics.html) of Rails
 
-## Author
+## Authors
 
 👤 **Patrikis Angelos**
 
